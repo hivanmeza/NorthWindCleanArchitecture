@@ -18,6 +18,6 @@ namespace NorthWind.Entities.Interfaces.Validation
         List<IFailure> Failures { get; }
         List<IFailure> SetValidatorFor<ItemsType>(IEnumerable<ItemsType> items,
             IValidator<ItemsType> validator);
-
+        IValidationService<T> ServiceValidator { get; }
     }
 }
