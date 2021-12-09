@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "ad4b9965-31e4-4d2b-8ec0-584c3eb59f58": {
+      "ProjectGuid": "ad4b9965-31e4-4d2b-8ec0-584c3eb59f58",
+      "DisplayName": "NorthWind.Entities",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

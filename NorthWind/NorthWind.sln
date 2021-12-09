@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31912.275
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Enterprise Business Rules", "Enterprise Business Rules", "{0AC3EA66-E971-4C4A-9B88-EB265888105C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthWind.Entities", "NorthWind.Entities\NorthWind.Entities.csproj", "{AD4B9965-31E4-4D2B-8EC0-584C3EB59F58}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AD4B9965-31E4-4D2B-8EC0-584C3EB59F58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD4B9965-31E4-4D2B-8EC0-584C3EB59F58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD4B9965-31E4-4D2B-8EC0-584C3EB59F58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD4B9965-31E4-4D2B-8EC0-584C3EB59F58}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AD4B9965-31E4-4D2B-8EC0-584C3EB59F58} = {0AC3EA66-E971-4C4A-9B88-EB265888105C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A5EA9F39-868A-4AEA-89CC-D972E6269A29}
+	EndGlobalSection
+EndGlobal

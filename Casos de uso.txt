@@ -1,0 +1,63 @@
+Caso de uso
+Historia de usuario: Crear orden de compra
+
+
+
+Como usuario del sistema, deseo crear una orden de compra para solicitar productos del almacén.
+
+
+
+Caso de uso: Crear orden de compra.
+
+
+
+Datos de entrada:
+- Identificador del cliente
+- Dirección de envío.
+- Ciudad de envío.
+- País de envío.
+- Código postal de envío.
+- Lista de productos incluyendo:
+- Identificador del producto
+- Precio
+- Cantidad
+
+
+
+Flujo primario
+1. El usuario envía la solicitud "Crear orden de compra" con los datos de entrada.
+2. El sistema valida los datos.
+3. El sistema registra la acción "Inicio de creación de orden de compra" con fines de auditoría.
+4. El sistema registra la orden de compra.
+5. El sistema registra la acción "Orden de compra <número de orden> creada." con fines de auditoria.
+6. Cuando el número de productos de la orden de compra sea mayor que 3, el sistema iniciará el proceso
+de envío de correo de notificación de "Orden especial creada".
+7. El sistema confirma que su solicitud ha sido procesada notificándole el número de la orden creada.
+
+
+
+Flujo alterno: Error de validación
+1. El procesamiento de la solicitud es cancelado.
+2. El error es registrado en la bitacora de errores del sistema.
+3. El sistema muestra el error al usuario.
+
+
+
+Consideraciones:
+- NorthWind maneja 4 tipos de transporte de mercancias: Marítimo, Aéreo, Feroviario y Terrestre.
+El tipo prdeterminado es Terrestre.
+- NorthWind maneja 2 formas para especificar descuentos: Mediante porcentaje y mediante
+cantidades absolutas. El desceunto predeterminado de una compra es del 10%.
+
+
+
+Validaciones:
+- El identificador del cliente es requerido y debe ser de 5 carcateres alfanuméricos.
+- La dirección de envío es requerida y debe ser de una longitud máxima de 60 caracteres alfanuméricos.
+- La ciudad de envío es requerida y debe tener una longitud mínima de 3 y máxima de 15 caracteres
+alfanuméricos.
+- El país de envío es requerido y debe tener una longitud mínima de 3 y máxima de 15 caracteres alfanuméricos.
+- El código postal es opcional con una longitud máxima de 10 caracteres alfanuméricos.
+- Debe especificar al menos un producto en la orden.
+- De cada producto especificado en la orden, será requerido el identificado del producto, la cantidad
+y el precio.
