@@ -1,4 +1,4 @@
-﻿namespace NorthWind.Entities.Ports
+﻿namespace NorthWind.Entities.Interfaces
 {
     public interface IPort<T>
     {

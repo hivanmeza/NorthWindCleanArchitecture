@@ -7,7 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\NorthWind.Sale.Events\NorthWind.Sale.Events.csproj" />
     <ProjectReference Include="..\NorthWind.Sales.DTOs\NorthWind.Sales.DTOs.csproj" />
+    <ProjectReference Include="..\NorthWind.Sales.Entities\NorthWind.Sales.Entities.csproj" />
+    <ProjectReference Include="..\NorthWind.Sales.UseCasesPorts\NorthWind.Sales.UseCasesPorts.csproj" />
   </ItemGroup>
 
   <ItemGroup>
