@@ -46,7 +46,7 @@ namespace NorthWind.Sales.UseCases.CreateOrder
             };
             foreach (var Item in order.OrderDetails)
             {
-                OrderAggregate.AddDetail(Item.ProductId,Item.UnitPrice,Item.Quantity);
+                OrderAggregate.AddDetail(Item.ProductId, Item.UnitPrice, Item.Quantity);
             }
 
             try
@@ -73,12 +73,12 @@ namespace NorthWind.Sales.UseCases.CreateOrder
                 throw;
             }
             return OrderAggregate;
-            
+
         }
 
         public void RaiseEventIfIsSpecialOrder(OrderAggregate order)
         {
-            if(new SpecialOrderSpecification().IsSatisfiedBy(order))
+            if (new SpecialOrderSpecification().IsSatisfiedBy(order))
             {
                 DomainEventHub.Raise(new SpecialOrderCreatedEvent(order.Id, order.OrderDetails.Count));
             }
