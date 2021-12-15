@@ -8,6 +8,5 @@ namespace NorthWind.Entities.Interfaces.Validation
 {
     public interface IValidationService<T>:IValidator<T>
     {
-
     }
 }

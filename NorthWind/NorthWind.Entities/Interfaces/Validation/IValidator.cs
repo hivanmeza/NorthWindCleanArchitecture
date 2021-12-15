@@ -1,16 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Linq.Expressions;
 
 namespace NorthWind.Entities.Interfaces.Validation
 {
     public interface IValidator<T>
     {
         IRule<T> AddRuleFor<TProperty>(
-            Expression<Func<T,TProperty>> expression,
+            Expression<Func<T, TProperty>> expression,
             bool StopOnFirtFailure);
 
         bool Validate(T instance);

@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "ZF93b4qKfCd1YB4KxJWLv3ZVMdW8hBXgbca1bjRwfwV1Ovc1GAHeIj1MHk//xaj/1D8avKDjTHtxmBTMNnSDCw==",
+  "dgSpecHash": "t/akSYcISYKV18GABEpoXgz9yCB1pnJKEl9ZjabtkwoxG6eLu9trDJXObDNZ7Fl9X/jT39xuQYVYesiSwGrsXA==",
   "success": true,
   "projectFilePath": "C:\\Users\\avni_\\Documents\\repos\\ImplementacionCleanArchitecture\\NorthWind\\NorthWind.Entities\\NorthWind.Entities.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\avni_\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace NorthWind.Entities.Interfaces
 {
-    public interface ILogWritableRepository
+    public interface ILogWritableRepository:IUnitOfWork
     {
         void Add(Log log);
         void Add(string description);
